@@ -13,4 +13,8 @@ class CustomArrayTest < Minitest::Test
   def test_it_exists
     assert_instance_of CustomArray, ca
   end
+
+  def test_it_flattens_an_empty_array
+    assert_equal [], ca.flatten([])
+  end
 end
