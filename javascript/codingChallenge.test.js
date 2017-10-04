@@ -23,7 +23,7 @@ describe('CustomArray', () => {
   })
 
   it('can flatten an array with a single nest', () => {
-    assert.deepEqual([1, 2], ca.flatten([1, [2]]))
+    assert.deepEqual([1, 2], ca.flatten([[1], [2]]))
   })
 
   it('can flatten an array with a single nest', () => {
