@@ -33,4 +33,8 @@ class CustomArrayTest < Minitest::Test
   def test_it_returns_a_single_array_from_a_nested_array_with_several_layers
     assert_equal [1, 2, 3], ca.flatten([[1, [2, 3]]])
   end
+
+  def test_it_returns_a_single_array_complex_array
+    assert_equal [1, 2, 3, 4, 5], ca.flatten([[1,2],[3,[4,5]]])
+  end
 end
