@@ -17,4 +17,12 @@ class CustomArrayTest < Minitest::Test
   def test_it_flattens_an_empty_array
     assert_equal [], ca.flatten([])
   end
+
+  def test_it_returns_an_array_with_a_single_value
+    assert_equal [1], ca.flatten([1])
+  end
+
+  def test_it_returns_a_simple_array_with_multiple_values
+    assert_equal ["Czarnecki", "Boudi", "squee"], ca.flatten(["Czarnecki", "Boudi", "squee"])
+  end
 end
