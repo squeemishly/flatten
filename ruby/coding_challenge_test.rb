@@ -3,14 +3,14 @@ require 'pry'
 require 'minitest/autorun'
 require_relative './coding_challenge'
 
-class ObjectTest < Minitest::Test
-  attr_reader :template
+class CustomArrayTest < Minitest::Test
+  attr_reader :ca
 
   def setup
-    @template = TemplateClass.new
+    @ca = CustomArray.new
   end
 
   def test_it_exists
-    assert_instance_of TemplateClass, template
+    assert_instance_of CustomArray, ca
   end
 end
