@@ -1,12 +1,12 @@
 const assert = require('chai').assert
 const CustomArray = require('./codingChallenge')
 
-describe('CustomArray()', () => {
+describe('CustomArray', () => {
   before( () => {
     ca = new CustomArray
   })
 
-  it('', () => {
-
+  it('exists', () => {
+    assert.instanceOf(ca, CustomArray)
   })
 })
