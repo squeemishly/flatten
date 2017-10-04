@@ -13,4 +13,12 @@ describe('CustomArray', () => {
   it('can flatten an array with nothing in it', () => {
     assert.deepEqual([], ca.flatten([]))
   })
+
+  it('can flatten an array with a single value in it', () => {
+    assert.deepEqual([1], ca.flatten([1]))
+  })
+
+  it('can flatten an array with a multiple values in it', () => {
+    assert.deepEqual([1, 2], ca.flatten([1, 2]))
+  })
 })
