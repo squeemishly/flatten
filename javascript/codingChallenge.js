@@ -1,9 +1,9 @@
-class Object {
+class CustomArray {
   constructor() {
 
   }
 
-  
+
 }
 
-module.exports = Object;
+module.exports = CustomArray;

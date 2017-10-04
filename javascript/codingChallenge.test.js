@@ -1,9 +1,9 @@
 const assert = require('chai').assert
-const Object = require('./codingChallenge')
+const CustomArray = require('./codingChallenge')
 
-describe('Object()', () => {
+describe('CustomArray()', () => {
   before( () => {
-    object = new Object
+    ca = new CustomArray
   })
 
   it('', () => {
