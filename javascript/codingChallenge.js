@@ -1,9 +1,7 @@
 class CustomArray {
-  constructor() {
-
+  flatten(arr) {
+    return arr
   }
-
-
 }
 
 module.exports = CustomArray;
